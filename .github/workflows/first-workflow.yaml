@@ -12,11 +12,11 @@ jobs:
               run: |
                 node -v
                 npm -v
-    #parallel-job-macos:   #Para correr un proceso en paralelo
-        #runs-on:macos-latest
-        #steps:
-            #- name: View SW Version
-                #run: sw_vers
+    parallel-job-macos:   #Para correr un proceso en paralelo
+        runs-on: macos-latest
+        steps:
+            - name: View SW Version
+              run: sw_vers
     dependant-job:
         runs-on: windows-lates
         needs: run-shell-commands #un proceso dependiente de otro
