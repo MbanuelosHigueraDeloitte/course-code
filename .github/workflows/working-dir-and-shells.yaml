@@ -1,4 +1,4 @@
-name: Working Dirs & Shells
+name: Working Dirs & Shells #WORKING DIRECTORY RUNNNING PWD
 on: [push]
 defaults: 
     run:
@@ -8,10 +8,10 @@ jobs:
     display-wd-info:
         runs-on: ubuntu-latest
         steps:
-            - name: Display Working Directory & List Files
+            - name: Display Working Directory & List Files #list files on working directory
               run: |
                 pwd
-                ls -a
+                ls -a  
                 echo $GITHUB_SHA
                 echo $GITHUB_REPOSITORY
                 echo $GITHUB_WORKSPACE
