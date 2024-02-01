@@ -28,10 +28,10 @@ jobs:
             - name: Display Working Directory & List Files
               run: |
                 Get-location
-                ls -a
-                echo $env: GITHUB_SHA
-                echo $env: GITHUB_REPOSITORY
-                echo $env: GITHUB_WORKSPACE
+                dir
+                echo $env:GITHUB_SHA
+                echo $env:GITHUB_REPOSITORY
+                echo $env:GITHUB_WORKSPACE
             - name: Python Shell
               shell: python
               run: |
