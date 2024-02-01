@@ -18,10 +18,10 @@ jobs:
             - name: View SW Version
               run: sw_vers
     dependant-job:
-        runs-on: windows-lates
+        runs-on: windows-latest
         needs: run-shell-commands #un proceso dependiente de otro
         steps:
             - name: echo a string
               run: Write-Output "Windows String"
             - name: Error Step
-              run: doesnotexistsss
+              run: doesnotexists
